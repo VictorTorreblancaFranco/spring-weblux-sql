@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: victor.torreblanca
+  datasource:
+    url: jdbc:postgresql://ep-cold-rice-anibjlrl-pooler.c-6.us-east-1.aws.neon.tech/neondb?sslmode=require&options=endpoint%3Dep-cold-rice-anibjlrl-pooler
+    username: neondb_owner
+    password: npg_rI76UVlhdZyn
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.jdbc: DEBUG
